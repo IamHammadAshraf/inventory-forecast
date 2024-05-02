@@ -93,6 +93,15 @@ const sendTokenResponse = (user, statusCode, res) => {
     sameSite: 'strict'
   };
 
+  exports.getMe = async (req, res) => {
+    try {
+      const user = req.user; // Populated by protect middleware
+      res.status(200).json({ success: true, data: user });
+    } catch (err) {
+      res.status(500).json({ success: false, message: 'Failed to fetch user' });
+    }
+  };
+  
   res
     .status(statusCode)
     .cookie('token', token, options)

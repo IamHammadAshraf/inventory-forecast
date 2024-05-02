@@ -1,15 +1,42 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 
 const LoginPage = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate();
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
-    console.log("Logginsg in:", { email, password });
-    // Add authentication logic here
+  
+    const loginData = { email, password };
+    console.log("Logging in:", loginData);
+  
+    try {
+      const response = await fetch('http://localhost:5000/api/v1/auth/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(loginData),
+      });
+  
+      const result = await response.json();
+      console.log(result);
+  
+      if (response.ok) {
+        localStorage.setItem("token", result.token); 
+        //alert('Login successful!');
+        navigate('/dashboard'); // Redirect to dashboard or home page
+      } else {
+        alert(result.message || 'Login failed');
+      }
+    } catch (error) {
+      console.error('Login error:', error);
+      alert('Server error. Try again later.');
+    }
   };
+  
+  
 
   return (
     <div className="min-h-screen bg-softCream dark:bg-deepNavy flex items-center justify-center">
