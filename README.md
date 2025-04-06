@@ -1,4 +1,8 @@
-Here's the updated `README.md` with your specific requirements:
+The Server-side is fully operational independently for now, and clears all testing done using PostMan
+The MongoDb server named 'app' is used for testing.
+
+This video shows our current Front-End or Client-side application
+![Final View](./Final-View.mp4)
 
 ```markdown
 # Inventory Forecast Web Application
