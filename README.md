@@ -67,35 +67,35 @@ Here are the mockups of the different views within the application:
 
 ### Dashboard Screenshots
 #### Dashboard View 1
-![Dashboard 1](./client-side/Dashboard-1.png)
+![Dashboard 1](./Dashboard-1.png)
 
 #### Dashboard View 2
-![Dashboard 2](./client-side/Dashboard-2.png)
+![Dashboard 2](./Dashboard-2.png)
 
 #### Dashboard View 3
-![Dashboard 3](./client-side/Dashboard-3.png)
+![Dashboard 3](./Dashboard-3.png)
 
 #### Dashboard View 4
-![Dashboard 4](./client-side/Dashboard-4.png)
+![Dashboard 4](./Dashboard-4.png)
 
 #### Dashboard View 5
-![Dashboard 5](./client-side/Dashboard-5.png)
+![Dashboard 5](./Dashboard-5.png)
 
 #### Dashboard View 6
-![Dashboard 6](./client-side/Dashboard-6.png)
+![Dashboard 6](./Dashboard-6.png)
 
 ### Other Screenshots
 #### About Page
-![About Page](./client-side/About.png)
+![About Page](./About.png)
 
 #### Dark Mode Screenshot
-![Dark Mode](./client-side/Dark-Mode.png)
+![Dark Mode](./Dark-Mode.png)
 
 #### Login Page
-![Login Page](./client-side/LoginPage.png)
+![Login Page](./LoginPage.png)
 
 #### Signup Page
-![Signup Page](./client-side/SignupPage.png)
+![Signup Page](./SignupPage.png)
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
