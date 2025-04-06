@@ -108,7 +108,4 @@ We welcome contributions! Feel free to fork the repository, create a branch, and
 Thank you for checking out this project! If you encounter any issues, please open an issue on GitHub or reach out to us directly.
 ```
 
-### Explanation:
-- **Installation**: Clear instructions for cloning, installing dependencies, and running the app.
-- **Structure of the Application**: This section gives a brief overview of the project's folder structure.
-- **Mockups of Application**: The images of the various views (dashboard, login, signup, etc.) are shown as mockups.
+
