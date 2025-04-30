@@ -10,7 +10,11 @@ const {
 
 const Inventory = require('../models/Inventory');
 const advancedResults = require('../middleware/advancedResults');
-const { protect, authorize } = require('../middleware/auth');
+// Remove 'authorize' from this line 👇
+const { protect } = require('../middleware/auth');
+
+// Keep dummy authorize middleware
+const authorize = () => (req, res, next) => next();
 
 const router = express.Router({ mergeParams: true });
 
